@@ -1,0 +1,9 @@
+Fonts have been outlined, but a layer is included that contains the original text. 
+
+Fonts used in design:
+
+Helvetica Neue Bold
+Helvetica Neue
+Reklame Script Medium
+Trade Gothic LT Std Bold Condensed No. 20 Oblique
+DINPro-Bold
