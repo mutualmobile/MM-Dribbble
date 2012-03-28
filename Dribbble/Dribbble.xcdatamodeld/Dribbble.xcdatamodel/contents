@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DBPlayer" representedClassName="DBPlayer" syncable="YES">
+        <attribute name="avatar_url" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAlternateAttributeNameKey" value="avatar_url"/>
+            </userInfo>
+        </attribute>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitterScreenName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAlternateAttributeNameKey" value="twitter_screen_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="followedByPlayers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBPlayer" inverseName="followers" inverseEntity="DBPlayer" syncable="YES">
+            <userInfo>
+                <entry key="key" value="value"/>
+                <entry key="MMRecordInverseRelationshipPrimaryAttributeKey" value="id"/>
+                <entry key="MMRecordRelationshipPrimaryAttributeKey" value="id"/>
+            </userInfo>
+        </relationship>
+        <relationship name="followers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBPlayer" inverseName="followedByPlayers" inverseEntity="DBPlayer" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordInverseRelationshipPrimaryAttributeKey" value="id"/>
+                <entry key="MMRecordRelationshipPrimaryAttributeKey" value="id"/>
+            </userInfo>
+        </relationship>
+        <relationship name="shots" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBShot" inverseName="player" inverseEntity="DBShot" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordInverseRelationshipPrimaryAttributeKey" value="id"/>
+                <entry key="MMRecordRelationshipPrimaryAttributeKey" value="id"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="MMRecordPrimaryAttributeKey" value="id"/>
+        </userInfo>
+    </entity>
+    <entity name="DBShot" representedClassName="DBShot" syncable="YES">
+        <attribute name="height" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="image_url" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAlternateAttributeNameKey" value="image_url"/>
+            </userInfo>
+        </attribute>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="player" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DBPlayer" inverseName="shots" inverseEntity="DBPlayer" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordInverseRelationshipPrimaryAttributeKey" value="id"/>
+                <entry key="MMRecordRelationshipPrimaryAttributeKey" value="player"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="MMRecordPrimaryAttributeKey" value="id"/>
+        </userInfo>
+    </entity>
+    <entity name="TWTweet" representedClassName="TWTweet" syncable="YES">
+        <attribute name="from_user" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="from_user_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="id_str" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TWUser" representedClassName="TWUser" syncable="YES"/>
+    <elements>
+        <element name="DBPlayer" positionX="160" positionY="192" width="128" height="195"/>
+        <element name="DBShot" positionX="349" positionY="297" width="128" height="150"/>
+        <element name="TWTweet" positionX="511" positionY="276" width="128" height="135"/>
+        <element name="TWUser" positionX="367" positionY="189" width="128" height="45"/>
+    </elements>
+</model>
