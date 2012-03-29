@@ -54,11 +54,8 @@
 		29C477CC1508450100ECB033 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C477C01508450100ECB033 /* background.png */; };
 		29C477CD1508450100ECB033 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C477C11508450100ECB033 /* footer.png */; };
 		29C477CE1508450100ECB033 /* frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C477C21508450100ECB033 /* frame.png */; };
-		29C477CF1508450100ECB033 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C477C31508450100ECB033 /* header.png */; };
 		29C477D01508450100ECB033 /* icon_dribbble.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C477C41508450100ECB033 /* icon_dribbble.png */; };
 		29C477D11508450100ECB033 /* icon_location.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C477C51508450100ECB033 /* icon_location.png */; };
-		29C477D51508450100ECB033 /* example-dribbble-app-sd-v3.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C477CA1508450100ECB033 /* example-dribbble-app-sd-v3.png */; };
-		29C477D61508450100ECB033 /* specs-dribbble-app-sd-v3.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C477CB1508450100ECB033 /* specs-dribbble-app-sd-v3.png */; };
 		29C477E4150854BC00ECB033 /* MMTweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C477E3150854BC00ECB033 /* MMTweetCell.m */; };
 		559305371520C81500C56482 /* ContainerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 559305361520C81500C56482 /* ContainerAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		559445ED1509923E0038468E /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 559445EC1509923E0038468E /* UIView+Animations.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -143,11 +140,8 @@
 		29C477C01508450100ECB033 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		29C477C11508450100ECB033 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
 		29C477C21508450100ECB033 /* frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame.png; sourceTree = "<group>"; };
-		29C477C31508450100ECB033 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
 		29C477C41508450100ECB033 /* icon_dribbble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_dribbble.png; sourceTree = "<group>"; };
 		29C477C51508450100ECB033 /* icon_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_location.png; sourceTree = "<group>"; };
-		29C477CA1508450100ECB033 /* example-dribbble-app-sd-v3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "example-dribbble-app-sd-v3.png"; sourceTree = "<group>"; };
-		29C477CB1508450100ECB033 /* specs-dribbble-app-sd-v3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "specs-dribbble-app-sd-v3.png"; sourceTree = "<group>"; };
 		29C477E2150854BC00ECB033 /* MMTweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTweetCell.h; sourceTree = "<group>"; };
 		29C477E3150854BC00ECB033 /* MMTweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTweetCell.m; sourceTree = "<group>"; };
 		559305351520C81500C56482 /* ContainerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerAdditions.h; sourceTree = "<group>"; };
@@ -351,8 +345,6 @@
 				296C4055150A88730038B190 /* Icon-72.png */,
 				55E2E93E151BCC8C0061690E /* Icon-144.png */,
 				29C477BF1508450100ECB033 /* assets */,
-				29C477CA1508450100ECB033 /* example-dribbble-app-sd-v3.png */,
-				29C477CB1508450100ECB033 /* specs-dribbble-app-sd-v3.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -369,7 +361,6 @@
 				29C477C01508450100ECB033 /* background.png */,
 				29C477C11508450100ECB033 /* footer.png */,
 				29C477C21508450100ECB033 /* frame.png */,
-				29C477C31508450100ECB033 /* header.png */,
 				29C477C41508450100ECB033 /* icon_dribbble.png */,
 				29C477C51508450100ECB033 /* icon_location.png */,
 			);
@@ -473,11 +464,8 @@
 				29C477CC1508450100ECB033 /* background.png in Resources */,
 				29C477CD1508450100ECB033 /* footer.png in Resources */,
 				29C477CE1508450100ECB033 /* frame.png in Resources */,
-				29C477CF1508450100ECB033 /* header.png in Resources */,
 				29C477D01508450100ECB033 /* icon_dribbble.png in Resources */,
 				29C477D11508450100ECB033 /* icon_location.png in Resources */,
-				29C477D51508450100ECB033 /* example-dribbble-app-sd-v3.png in Resources */,
-				29C477D61508450100ECB033 /* specs-dribbble-app-sd-v3.png in Resources */,
 				26B5A4A8150879FC000CE407 /* MMShotView.xib in Resources */,
 				291C09B1150A5DDD00CAB019 /* iPad-landscape.png in Resources */,
 				291C09B2150A5DDD00CAB019 /* iPad-portrait.png in Resources */,
